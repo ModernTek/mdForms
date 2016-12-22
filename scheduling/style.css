@@ -14,7 +14,7 @@ html{
 body{
   font-size:12px;
   height: 100%; 
-  width: 70%;
+  width: 40%;
   padding: 20px;
   margin: 10px auto;
   font-family: Helvetica, Arial, sans-serif;
@@ -36,11 +36,6 @@ body{
   border-style: solid;
   border-radius: 8px;
   border-with:6px;
-}
-#schedule_appt .link{
-  font-size: 18px;
-  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
-  color:#0000FF;
 }
 .placeholder {
     color: #999;
@@ -76,4 +71,32 @@ input:not([type=submit]), select {
   background: -o-linear-gradient(top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
   background: -ms-linear-gradient(top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
   background: linear-gradient(to bottom,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+fieldset {
+/* required to properly style form 
+   elements on WebKit based browsers */
+  -webkit-appearance: none;
+  
+  /*width : 50%;*/
+  border: 1px solid #333;
+  margin: 0;
+  
+  font-family: inherit;
+  font-size: 90%;
+  
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
 }
