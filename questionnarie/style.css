@@ -58,6 +58,7 @@ input[type="radio"]{
 #question_form  label{
   font-weight:bold;
   font-size:17px;
+  cursor:pointer;
 }
 
 legend {
